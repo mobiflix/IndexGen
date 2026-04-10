@@ -151,6 +151,12 @@
     );
   } 
 }
+    captcha: {
+  enabled: true,              // Set to false to disable CAPTCHA
+  require_on_create: true,    // Require CAPTCHA when creating links
+  require_on_access: false,   // Require CAPTCHA when accessing links
+  fallback_on_error: true,    // Allow operations when CAPTCHA service is down
+}
 </script>
 
 </body>
